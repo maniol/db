@@ -152,7 +152,6 @@ Promise.all([kenny.save(), mark.save(), benny.save()])
     .then(findMarkAndDelete)
     .then(findKennyAndDelete)
     .then(findBennyAndRemove)
-    .then(function(){process.exit(1)})
     .catch(console.log.bind(console))
 
 
